@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2216
+
+QuickFixNotes, or QFN, is a quick hack that allows file annotation
+based on |quickfix| functionality.  In particular, this plugin allows the user
+to tie comments to a specific source file, line number, and column number
+without modifying the file being reviewed.  The goal of the plugin is to
+provide a simple and useful mechanism for tracking notes when reviewing any
+sort of text file -- from documents and book drafts to source code and
+configuration files.  Paired with xxd, you can even annotate binary formats
+with it.  qfn is useful any place where inserting comments into the
+file being reviewed is impractical.
+
+Given its simplicity, this plugin only supplies a simple set of features:
+
+    * Add a comment for the given line and column number to the |quickfix| list
+    * Save the current |quickfix| list an expected format
+    * Provide all functionality without external scripting dependencies
+
+In the future, QFN may support more advanced interfaces to the |quickfix|.
+
+To use, just map <Plug>QuickFixNote and <Plug>QuickFixSave to keys.  
+When called, QuickFixNote will add an entry to the quickfix list with a user
+supplied comment for the current cursor's line number, column, and buffer
+name. 
