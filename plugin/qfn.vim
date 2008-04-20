@@ -1,9 +1,11 @@
 " qfn.vim
 " Create file notes in quickfix format
-" Last Change: 2008 April
+" Last Changed: 2008 April 20
 " Author: Will Drewry <redpig@dataspill.org>
 " License: See qfn.txt packaged with this file.
-"
+" Changes:
+" = 2008-April-20
+" + Removed forced F8 mapping. Whoops.
 
 if v:version < 700
   echo "qfn.vim requires version 7.0 or higher"
@@ -89,4 +91,3 @@ if !hasmapto('<Plug>QuickFixSave')
   map <unique> <Leader>s <Plug>QuickFixSave quickfix.err
 endif
 
-noremap <silent> <F8> :copen<CR>

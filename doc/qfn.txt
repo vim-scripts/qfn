@@ -2,7 +2,7 @@
 
 Author: Will Drewry  (redpig AT dataspill DOT org)
 For Vim version 7.0 and above
-Last change: 2008 April 17
+Last change: 2008 April 20
 
 1. Overview 					|qfn-intro|
 2. Retrieving QFN				|qfn-online|
@@ -67,21 +67,15 @@ The qfn plugin will work on all the platforms where Vim is supported and
 						*qfn-install*
 4. Installation~
 
-1. Unzip the qfn-VERSION.zip file to your user-specific Vim directory. This
-   may be any of the following locations: $HOME/.vim,$HOME/vimfiles, or $VIM/vimfiles.
-   There should be two resulting files:
-
-	plugin/qfn.vim - main qfn plugin file
-	doc/qfn.txt    - documentation (help) file
-
-   Refer to the |add-plugin|and |'runtimepath'| Vim help pages for more
-   details about installing Vim plugins.
-2. Change to the doc directory, open Vim, and run the following command:
+1. Download the |vimball| from http://vim.org.
+2. Run:
 >
-	:helptags .
+   vim qfn.vba
 <
-   This will enable the jumps across qfn help topics.
-3. Restart Vim.
+3. Execute the following ex command:
+>
+   :so %
+<
 4. You should now be able to bind <Plug>QuickFixNote and <Plug>QuickFixSave to
    your preferred key combinations.  You can use the ":help qfn" command  at any time
    to get more information.
